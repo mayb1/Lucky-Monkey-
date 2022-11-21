@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/navigation_lumMenu">
+    <fragment
+        android:id="@+id/navigation_lumMenu"
+        android:name="luckkky.bigw.monkey.LumMenuFragment"
+        android:label="fragment_lum_menu"
+        tools:layout="@layout/fragment_lum_menu" >
+        <action
+            android:id="@+id/action_lumMenuFragment_to_lumPrivacyPolicyFragment"
+            app:destination="@id/navigation_lumPrivacyPolicy" />
+        <action
+            android:id="@+id/action_lumMenuFragment_to_lumGameFragment"
+            app:destination="@id/navigation_lumGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_lumPrivacyPolicy"
+        android:name="luckkky.bigw.monkey.LumPrivacyPolicyFragment"
+        android:label="fragment_lum_privacy_policy"
+        tools:layout="@layout/fragment_lum_privacy_policy" />
+    <fragment
+        android:id="@+id/navigation_lumGame"
+        android:name="luckkky.bigw.monkey.LumGameFragment"
+        android:label="fragment_lum_game"
+        tools:layout="@layout/fragment_lum_game" />
+</navigation>
